@@ -1,0 +1,90 @@
+\documentclass[12pt,leqno]{article}
+\usepackage[a4paper,hmargin=1.5cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[shortlabels,inline]{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{chemformula}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{xeCJKfntef}
+\usepackage{pgfplots}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{multirow}
+\newcolumntype{x}[1]{>{\centering\arraybackslash}m{#1}}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\cfoot{\thepage\ /\ \pageref{LastPage}}
+\setlength{\parindent}{0pt}
+\setCJKmainfont{Noto Serif CJK TC}
+\linespread{1.15}
+
+\begin{document}
+{
+  \Large \bfseries 練習題 \hfill 2023/07/15 \par \medskip
+}
+用下列規則判斷氧化數。
+\begin{center}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabular}{|m{2cm}|m{10cm}|m{4cm}|}
+    \hline
+    \centering 類型 & \centering\arraybackslash 規則 & \centering\arraybackslash 例子 \\ \hline
+    \centering 元素 & 氧化數皆為 0。&
+    \begin{tabular}[b]{@{}l}
+      \ch{H2} 中的 \ch{H}：0\\
+      \ch{O3} 中的 \ch{O}：0
+    \end{tabular} \\ \hline
+    \centering 化合物 &
+    \begin{tabular}[b]{@{}l}
+      如果化合物是由離子組成，優先以離子判斷氧化數。\\
+      Na、K：$+1$。\\
+      Mg、Ca：$+2$。\\
+      Al：$+3$。\\
+      H：多數狀況下是 $+1$。\\
+      O：多數狀況下是 $-2$。\\
+      Cl、Br、I：多數狀況下是 $-1$。
+    \end{tabular} &
+    \begin{tabular}[b]{@{}l}
+      \ch{H2O} 中的 \ch{O}：$-2$ \\
+      \ch{NH3} 中的 \ch{N}：$-3$ \\
+      \ch{Ca^2+} 中的 \ch{Ca}：$+2$ \\ 
+      \ch{CO3^2-} 中的 \ch{C}：$+4$
+    \end{tabular} \\ \hline
+  \end{tabular}
+\end{center}
+在下列各反應中，列出反應物、生成物中各原子的氧化數，並找出反應中的氧化劑與還原劑。
+\begin{enumerate}[label=(\arabic*),left=0pt]
+  \item $2\,\ch{Fe2O3} + 3\,\ch{C} \longrightarrow 4\,\ch{Fe} + 3\,\ch{CO2}$ \vspace{12ex}
+  \item $2\,\ch{K} + 2\,\ch{H2O} \longrightarrow 2\,\ch{KOH} + \ch{H2}$ \vspace{12ex}
+  \item $\ch{Zn} + \ch{CuSO4} \longrightarrow \ch{Cu} + \ch{ZnSO4}$ \hfill 反應中有 \ch{SO4^2-}{\scriptsize(硫酸根)} 參與 \vspace{12ex}
+  \item $3\,\ch{Cu} + 8\,\ch{HNO3} \longrightarrow 3\,\ch{Cu(NO3)2} + 2\,\ch{NO} + 4\,\ch{H2O}$ \hfill 反應中有 \ch{NO3-}{\scriptsize(硝酸根)} 參與
+\end{enumerate}
+\newpage
+下表包含常見的離子。
+\begin{center}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabular}{|m{2cm}|m{6cm}|m{6cm}|}
+    \hline
+    & \centering 陽離子 & \centering\arraybackslash 陰離子 \\ \hline
+    \centering 主族元素 & \raggedright\ch{H+}、\ch{Na+}、\ch{K+}、\ch{Mg^2+}、\ch{Ca^2+}、\ch{Al^3+} & \ch{Cl-}、\ch{Br-}、\ch{I-}、\ch{O^2-}、\ch{S^2-} \\ \hline
+    \centering 過渡元素 & \ch{Fe^3+}、\ch{Cu^2+}、\ch{Zn^2+}、\ch{Ag+} & \\ \hline
+    \centering 多原子 & \ch{NH4+}{\scriptsize(銨根)} & \raggedright\arraybackslash\ch{OH-}{\scriptsize(氫氧根)}、\ch{CO3^2-}{\scriptsize(碳酸根)}、\ch{SO4^2-}{\scriptsize(硫酸根)}、\ch{NO3-}{\scriptsize(硝酸根)}、\ch{HCO3-}{\scriptsize(碳酸氫根)}、\ch{HSO4-}{\scriptsize(硫酸氫根)} \\ \hline
+  \end{tabular}
+\end{center}
+\begin{enumerate}[left=0pt]
+  \item 寫出下列電解質的解離反應式。
+  
+  (1) 氫氯酸{\scriptsize(鹽酸)} \> (2) 硫酸 \> (3) 硝酸 \vspace{20ex}
+  \item 寫出下列電解質的解離反應式。
+
+  (1) 氫氧化鉀 \> (2) 氫氧化鈣 \> (3) 氫氧化銨{\scriptsize(氨水)} \vspace{20ex}
+  \item 寫出下列電解質的解離反應式。
+
+  (1) 碘化鉀 \> (2) 氯化鈣 \> (3) 碳酸鈉 \> (4) 硝酸銅 \> (5) 硫酸鐵
+\end{enumerate}
+\end{document}
